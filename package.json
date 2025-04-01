@@ -1,0 +1,15 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "description": "package.json just for running both stacks",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix client\" \"npm start --prefix server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SEPM Team",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
